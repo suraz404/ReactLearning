@@ -1,25 +1,28 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 const App = () => {
-  const [length, _setLength] = useState(8);
-  const [numberAllowed, _setNumberAllowed] = useState(false);
-  const [charAllowed, _setCharAllowed] = useState(false);
-  const [password, setPasword] = useState("");
+  const [length, setLength] = useState(8);
+  const [numberAllowed, setNumberAllowed] = useState(false);
+  const [charAllowed, setCharAllowed] = useState(false);
+  const [password, setPassword] = useState("");
 
   //useCallback use garnu parxa for method calling repeatedly
 
-  const _passwordGenerator = useCallback(() => {
+  const passwordGenerator = useCallback(() => {
     let pass = "";
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     if (numberAllowed) str += "1234567890";
     if (charAllowed) str += "!@#$%^&*(){}[]";
 
-    for (let i = 1; i < length; i++) {
+    for (let i = 1; i <= length; i++) {
       let char = Math.floor(Math.random() * str.length);
       pass += str.charAt(char);
     }
-    setPasword(pass);
-  }, [length, numberAllowed, charAllowed, setPasword]);
+    setPassword(pass);
+  }, [length, numberAllowed, charAllowed, setPassword]);
+  useEffect(() => {
+    passwordGenerator();
+  }, [passwordGenerator]);
 
   return (
     <>
@@ -34,8 +37,39 @@ const App = () => {
           />
           <button className="bg-blue-500 py-2 px-3 text-white ">Copy</button>
         </div>
-        <input type="range" value={length} min={8} max={12} />
-        {length}
+        <div className="flex text-sm gap-x-2">
+          <div className="flex gap-x-1">
+            <input
+              type="range"
+              min={8}
+              max={20}
+              value={length}
+              className="cursor-pointer"
+              onChange={(e) => {
+                setLength(e.target.value);
+              }}
+            />
+            <label>Length : {length}</label>
+          </div>
+          <div className="flex gap-x-1">
+            <input
+              type="checkbox"
+              defaultChecked={numberAllowed}
+              id="numberChecked"
+              onChange={() => setNumberAllowed((prev) => !prev)}
+            />
+            <label htmlFor="numberChecked">Numbers</label>
+          </div>
+          <div className="flex gap-x-1">
+            <input
+              type="checkbox"
+              defaultChecked={charAllowed}
+              id="charChecked"
+              onChange={() => setCharAllowed((prev) => !prev)}
+            />
+            <label htmlFor="charChecked">Characters</label>
+          </div>
+        </div>
       </div>
     </>
   );
