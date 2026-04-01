@@ -36,7 +36,7 @@ const App = () => {
     setTimeout(() => setIsCopied(false), 2000);
   }, [password]);
 
-  // Auto-generate on dependency change
+  // Auto-generate on dependency changesss
   useEffect(() => {
     generatePassword();
   }, [length, numberAllowed, charAllowed, generatePassword]);
