@@ -1,7 +1,9 @@
 // import UseState from "./components/UseState";
 
+import Profile from "./components/Profile";
+
 // import LocalStorage from "./components/LocalStorage";
-import TodoList from "./components/TodoList";
+// import TodoList from "./components/TodoList";
 
 const App = () => {
   return (
@@ -9,7 +11,8 @@ const App = () => {
       {/* <Weather temp={23} /> */}
       {/* <UseState /> */}
       {/* <LocalStorage /> */}
-      <TodoList />
+      {/* <TodoList /> */}
+      <Profile />
     </div>
   );
 };
