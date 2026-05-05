@@ -1,10 +1,10 @@
-import Weather from "./components/Weather";
+import UseState from "./components/UseState";
 
 const App = () => {
   return (
     <div>
-      App
-      <Weather temp={23} />
+      {/* <Weather temp={23} /> */}
+      <UseState />
     </div>
   );
 };
