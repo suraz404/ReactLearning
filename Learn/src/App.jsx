@@ -1,6 +1,8 @@
 // import UseState from "./components/UseState";
 
-import Profile from "./components/Profile";
+import ShoppingLists from "./components/ShoppingLists";
+
+// import Profile from "./components/Profile";
 
 // import LocalStorage from "./components/LocalStorage";
 // import TodoList from "./components/TodoList";
@@ -12,7 +14,8 @@ const App = () => {
       {/* <UseState /> */}
       {/* <LocalStorage /> */}
       {/* <TodoList /> */}
-      <Profile />
+      {/* <Profile /> */}
+      <ShoppingLists />
     </div>
   );
 };
