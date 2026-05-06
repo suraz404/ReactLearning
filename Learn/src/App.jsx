@@ -1,6 +1,8 @@
 // import UseState from "./components/UseState";
 
-import CounterEffects from "./components/CounterEffects";
+import FetchDataEffects from "./components/FetchDataEffects";
+
+// import CounterEffects from "./components/CounterEffects";
 
 // import CopyInput from "./components/CopyInput";
 
@@ -21,7 +23,8 @@ const App = () => {
       {/* <Profile /> */}
       {/* <ShoppingLists /> */}
       {/* <CopyInput /> */}
-      <CounterEffects />
+      {/* <CounterEffects /> */}
+      <FetchDataEffects />
     </div>
   );
 };
