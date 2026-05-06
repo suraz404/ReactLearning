@@ -1,6 +1,8 @@
 // import UseState from "./components/UseState";
 
-import ShoppingLists from "./components/ShoppingLists";
+import CopyInput from "./components/CopyInput";
+
+// import ShoppingLists from "./components/ShoppingLists";
 
 // import Profile from "./components/Profile";
 
@@ -15,7 +17,8 @@ const App = () => {
       {/* <LocalStorage /> */}
       {/* <TodoList /> */}
       {/* <Profile /> */}
-      <ShoppingLists />
+      {/* <ShoppingLists /> */}
+      <CopyInput />
     </div>
   );
 };
