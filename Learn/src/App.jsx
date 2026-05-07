@@ -1,6 +1,6 @@
 // import UseState from "./components/UseState";
 
-import FetchDataEffects from "./components/FetchDataEffects";
+// import FetchDataEffects from "./components/FetchDataEffects";s
 
 // import CounterEffects from "./components/CounterEffects";
 
@@ -12,6 +12,7 @@ import FetchDataEffects from "./components/FetchDataEffects";
 
 // import LocalStorage from "./components/LocalStorage";
 // import TodoList from "./components/TodoList";
+import UseContextData from "../UseContextData";
 
 const App = () => {
   return (
@@ -24,7 +25,8 @@ const App = () => {
       {/* <ShoppingLists /> */}
       {/* <CopyInput /> */}
       {/* <CounterEffects /> */}
-      <FetchDataEffects />
+      {/* <FetchDataEffects /> */}
+      <UseContextData />
     </div>
   );
 };
