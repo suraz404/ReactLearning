@@ -1,9 +1,3 @@
-import { dataContext } from "./UserContext";
-import { useContext } from "react";
+import { createContext } from "react";
 
-const useContextData = () => {
-  const data = useContext(dataContext);
-  return <div>{data}</div>;
-};
-
-export default useContextData;
+export const UserContext = createContext();
