@@ -8,7 +8,7 @@ const UpdateUser = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     updateName({ name: newName });
-    setNewName("");
+    setNewName(" hello");
   };
   return (
     <div>
