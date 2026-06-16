@@ -1,8 +1,10 @@
 // import UseState from "./components/UseState";
 
-import UpdateUser from "../UpdateUser";
-import UserProvider from "../UserContext";
-import UserProfile from "../UserProfile";
+import Counter from "./components/Counter";
+
+// import UpdateUser from "../UpdateUser";
+// import UserProvider from "../UserContext";
+// import UserProfile from "../UserProfile";
 
 // import FetchDataEffects from "./components/FetchDataEffects";s
 
@@ -19,21 +21,22 @@ import UserProfile from "../UserProfile";
 
 const App = () => {
   return (
-    <UserProvider>
-      <div>
-        {/* <Weather temp={23} /> */}
-        {/* <UseState /> */}
-        {/* <LocalStorage /> */}
-        {/* <TodoList /> */}
-        {/* <Profile /> */}
-        {/* <ShoppingLists /> */}
-        {/* <CopyInput /> */}
-        {/* <CounterEffects /> */}
-        {/* <FetchDataEffects /> */}
-        <UserProfile />
-        <UpdateUser />
-      </div>
-    </UserProvider>
+    // <UserProvider>
+    <div>
+      {/* <Weather temp={23} /> */}
+      {/* <UseState /> */}
+      {/* <LocalStorage /> */}
+      {/* <TodoList /> */}
+      {/* <Profile /> */}
+      {/* <ShoppingLists /> */}
+      {/* <CopyInput /> */}
+      {/* <CounterEffects /> */}
+      {/* <FetchDataEffects /> */}
+      {/* <UserProfile />
+        <UpdateUser /> */}
+      <Counter />
+    </div>
+    // </UserProvider>
   );
 };
 
