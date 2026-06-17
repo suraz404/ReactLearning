@@ -1,6 +1,7 @@
 // import UseState from "./components/UseState";
 
-import Counter from "./components/Counter";
+// import Counter from "./components/Counter";
+import Timer from "./components/Timer";
 
 // import UpdateUser from "../UpdateUser";
 // import UserProvider from "../UserContext";
@@ -34,7 +35,8 @@ const App = () => {
       {/* <FetchDataEffects /> */}
       {/* <UserProfile />
         <UpdateUser /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <Timer />
     </div>
     // </UserProvider>
   );
